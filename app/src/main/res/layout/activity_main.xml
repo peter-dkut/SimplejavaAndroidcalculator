@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-200dp"
+        android:id="@+id/mainscre"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="1000dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginTop="70dp"
+            android:id="@+id/inputs"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:layout_width="1000dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:id="@+id/outputs"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mainscre"
+        android:id="@+id/sectiondel"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/clear"
+            android:onClick="onclear"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="CLR"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:background="@color/colorPrimary"
+            android:onClick="delete"
+            android:text="DEL"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="modulus"
+            android:background="@color/colorPrimary"
+            android:id="@+id/modulus"
+            android:text="MOD"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/sectiondel"
+        android:orientation="horizontal"
+        android:id="@+id/sectionseven">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onseven"
+            android:id="@+id/seven"
+            android:text="7"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="oneight"
+            android:id="@+id/eight"
+            android:text="8"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nine"
+            android:onClick="onnine"
+            android:text="9"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:onClick="onadd"
+            android:id="@+id/addition"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/sectionfour"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/sectionseven"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/four"
+            android:onClick="onfour"
+            android:text="4"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onfive"
+            android:id="@+id/five"
+            android:text="5"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/six"
+            android:onClick="onsix"
+            android:text="6"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:onClick="onminus"
+            android:layout_height="wrap_content"
+            android:id="@+id/substraction"
+            android:text="-"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/sectionone"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/sectionfour">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onone"
+        android:id="@+id/one"
+        android:text="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ontwo"
+        android:id="@+id/two"
+        android:text="2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onthree"
+        android:id="@+id/three"
+        android:text="3"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="onmultiplication"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiplication"
+        android:text="*"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="40dp"
+    android:layout_below="@+id/sectionone"
+    android:id="@+id/sectiondot">
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="onpoint"
+        android:layout_height="wrap_content"
+        android:id="@+id/point"
+        android:text="."/>
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="onzero"
+        android:layout_height="wrap_content"
+        android:id="@+id/zero"
+        android:text="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onequals"
+        android:id="@+id/equals"
+        android:text="=" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="ondivision"
+        android:layout_height="wrap_content"
+        android:id="@+id/division"
+        android:text="/"/>
+
+</LinearLayout>
+
+</RelativeLayout>
